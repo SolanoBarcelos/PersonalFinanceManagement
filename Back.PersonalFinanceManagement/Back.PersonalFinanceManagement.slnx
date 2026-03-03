@@ -1,0 +1,19 @@
+<Solution>
+  <Folder Name="/Itens de Solução/">
+    <File Path=".gitignore" />
+    <File Path="docker-compose.yml" />
+  </Folder>
+  <Folder Name="/ScriptsSQL/">
+    <File Path="ScriptsSQL/01_Init.sql" />
+    <File Path="ScriptsSQL/02_Insert.sql" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="Tests/Domain.UnitTests/Domain.UnitTests.csproj" />
+  </Folder>
+  <Project Path="API/API.csproj">
+    <BuildDependency Project="Domain/Domain.csproj" />
+  </Project>
+  <Project Path="Application/Application.csproj" />
+  <Project Path="Domain/Domain.csproj" />
+  <Project Path="Infrastructure/Infrastructure.csproj" />
+</Solution>

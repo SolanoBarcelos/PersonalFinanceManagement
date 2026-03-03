@@ -1,0 +1,35 @@
+/* Importação obrigatória do Tailwind v4 */
+@import "tailwindcss";
+
+/* A diretiva @theme do Tailwind v4 cria automaticamente as classes utilitárias baseadas nestas variáveis.
+*/
+@theme {
+
+  --color-surface: #ffffff;
+  --color-surface-raised: #f8fafc; 
+  --color-primary: #3b3054; 
+  --color-primary-hover: #2d2442;
+  --color-secondary: #1e40af;
+  --color-muted: #f1f5f9;
+  --color-destructive: #b91c1c; 
+  --color-success: #65a30d;
+
+  /* Textos */
+  --color-foreground: #0f172a;
+  --color-foreground-subtle: #475569;
+  --color-muted-foreground: #64748b;
+  --color-primary-foreground: #ffffff;
+  --color-secondary-foreground: #ffffff;
+  --color-destructive-foreground: #ffffff;
+
+  /* Bordas e Foco */
+  --color-border: #e2e8f0;
+  --color-input: #cbd5e1;
+  --color-ring: #3b3054;
+}
+
+/* Reset para fundo da pagina ficar na cor correta */
+body {
+  background-color: var(--color-surface-raised);
+  color: var(--color-foreground);
+}

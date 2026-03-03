@@ -1,0 +1,30 @@
+# AMBIENTE DE DESENVOLVIMENTO LOCAL (DOCKER) 
+# Rode esse comando para iniciar o banco de dados : docker-compose up -d   
+# Para limpar os dados da sua máquina após o teste: docker-compose down -v   
+
+version: '3.8'
+
+services:
+  postgres-db:
+    image: postgres:15-alpine
+    container_name: personal_finance_management_db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: "1234"
+      POSTGRES_DB: PersonalFinanceManagementDB
+    ports:
+      - "5432:5432"
+    volumes:
+      # Persistência de dados para evitar perda em restarts
+      - postgres_data:/var/lib/postgresql/data
+      
+      # Mapeamento da PASTA ScriptsSQL para inicialização automática
+      # O Postgres executará 01_init.sql e 02_Insert.sql em ordem alfabética
+      - ./ScriptsSQL:/docker-entrypoint-initdb.d/
+    
+    # Garante que o container suba automaticamente com o Docker
+    restart: unless-stopped
+
+volumes:
+  # Volume nomeado para persistir dados
+  postgres_data:
