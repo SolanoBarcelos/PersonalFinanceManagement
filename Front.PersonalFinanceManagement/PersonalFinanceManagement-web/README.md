@@ -1,3 +1,12 @@
+# Frontend - Personal Finance Management Web
+
+Interface Single Page Application (SPA).
+
+## 🛠️ Tecnologias
+- **React 19 & Vite**
+- **Tailwind CSS v4:** Estilização.
+- **Axios:** Integração robusta com a API.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
