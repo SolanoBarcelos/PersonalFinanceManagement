@@ -31,13 +31,11 @@ docker-compose down -v
 - Resetar o package.json (se estiver corrompido/vazio):
 ```bash
 npm init -y
-```
-- 
+``` 
 
 - Instale as dependências do projeto:
 ```bash
 npm install
-npm init -y
 npm install vite @vitejs/plugin-react --save-dev
 npm install react react-dom
 npm install @tailwindcss/vite tailwindcss
