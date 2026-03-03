@@ -1,6 +1,7 @@
 # Personal Finance Management
 
 Sistema de gestão financeira pessoal desenvolvido com .NET 8 e React (Vite).
+Vídeo documental de funcionalidades do Frontend e Swagger estão na pasta Video na raiz do repositório
 
 ## Estrutura do Projeto
 - **/Back.PersonalFinanceManagement**: API REST utilizando ASP.NET Core, Dapper e Clean Architecture + DDD.
@@ -12,7 +13,7 @@ Sistema de gestão financeira pessoal desenvolvido com .NET 8 e React (Vite).
 - **Infraestrutura:** Docker e Docker Compose para |Banco de Dados.
 
 ## Pipeline CI
-- Configuração de pipeline CI utilizando GitHub Actions para automação de testes.
+- Configuração de pipeline CI utilizando GitHub Actions para automação de testes, o gatilho é cada push ou pull request na branch main. Para Verificar o pipeline, acesse a aba "Actions" no repositório do GitHub. 
 
 ## Configuração e Execução
 
@@ -27,9 +28,28 @@ docker-compose down -v
 ```
 ## 2. Frontend
 
+- Resetar o package.json (se estiver corrompido/vazio):
+```bash
+npm init -y
+```
+- 
+
 - Instale as dependências do projeto:
 ```bash
 npm install
+npm init -y
+npm install vite @vitejs/plugin-react --save-dev
+npm install react react-dom
+npm install @tailwindcss/vite tailwindcss
+npm install tailwind-merge clsx lucide-react
+npm install axios tailwind-variants
+```
+ou
+
+```bash
+npm init -y
+npm install vite @vitejs/plugin-react @tailwindcss/vite tailwindcss --save-dev
+npm install react react-dom axios tailwind-merge tailwind-variants clsx lucide-react
 ```
 
 - Rode o projeto localmente:
