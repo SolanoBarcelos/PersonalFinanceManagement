@@ -2,6 +2,7 @@
   <Folder Name="/Itens de Solução/">
     <File Path=".gitignore" />
     <File Path="docker-compose.yml" />
+    <File Path="README.md" />
   </Folder>
   <Folder Name="/ScriptsSQL/">
     <File Path="ScriptsSQL/01_Init.sql" />
