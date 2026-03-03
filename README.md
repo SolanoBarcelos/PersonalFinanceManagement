@@ -56,7 +56,7 @@ builder.Services.AddCors(options =>
 dotnet run --project Back.PersonalFinanceManagement
 ```
 ## Obs.:
-Informações arquiteturais, padrões de projeto e outras escolhas técnicas podem ser encontradas no README de cada projeto.
+Informações arquiteturais, padrões de projeto e outras escolhas técnicas podem ser encontradas no README de cada projeto e também em comentários/documentação no código
 
 ## Melhorias Futuras:
 - Arquivos em ingles no Frontend.
