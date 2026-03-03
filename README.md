@@ -12,7 +12,7 @@ Sistema de gestão financeira pessoal desenvolvido com .NET 8 e React (Vite).
 - **Infraestrutura:** Docker e Docker Compose para |Banco de Dados.
 
 ## Pipeline CI
-- Configuração de pipeline CI utilizando GitHub Actions para automação de testes.
+- Configuração de pipeline CI utilizando GitHub Actions para automação de testes, o gatilho é cada push ou pull request na branch main. Para Verificar o pipeline, acesse a aba "Actions" no repositório do GitHub. 
 
 ## Configuração e Execução
 
